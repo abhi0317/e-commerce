@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <script src=""></script>
+
+<h2>Demo JavaScript in Body</h2>
+
+<p id="demo">A Paragraph.</p>
+<div id="dd"></div>
+
+<button type="button" onclick="alert('test')">Try it 1</button>
+<button type="button" onclick="myFunction()">Add</button>
+<button type="button" onclick="sub()">sub</button>
+<button type="button" onclick="div()">div</button>
+<button type="button" onclick="multi()">multi</button><br>
+<input type="text" name="res" id="s" placeholder="Result" readonly>
+<br>
+<input type="text" name="num1" id="num1" placeholder="Number 1"><br>
+<input type="text" name="num1" id="num2" placeholder="Number 2"><br>
+<button onclick="add1()">Add</button>
+<button onclick="sub1()">sub</button>
+<button onclick="div1()">div</button>
+<button onclick="multi1()">multi</button>
+<br>
+
+
+
+<script>
+  function add1(){
+n1=eval(document.getElementById("num1").value)
+n2=eval(document.getElementById("num2").value)
+s=n1+n2
+document.getElementById("s").value=s
+  }
+  function sub1(){
+n1=eval(document.getElementById("num1").value)
+n2=eval(document.getElementById("num2").value)
+s=n1-n2
+document.getElementById("s").value=s
+  }
+  function div1(){
+    n1=eval(document.getElementById("num1").value)
+    n2=eval(document.getElementById("num2").value)
+    s=n1/n2
+    document.getElementById("s").value=s
+  }
+  function multi1(){
+    n1=eval(document.getElementById("num1").value)
+    n2=eval(document.getElementById("num2").value)
+    s=n1*n2
+    document.getElementById("s").value=s
+  }
+
+  
+
+
+
+      a=10;
+      b=12;
+    function myFunction() {
+       sum=a+b;
+       document.getElementById("dd").innerHTML =sum;
+      }
+      function sub(){
+        sum=a-b
+        document.getElementById("dd").innerHTML=sum;
+      }
+      function div(){
+        sum=a/b
+        document.getElementById("dd").innerHTML=sum;
+      }
+      function multi(){
+        sum=a*b
+        document.getElementById("dd").innerHTML=sum;   
+      }
+
+</script>
+</body>
+</html> 

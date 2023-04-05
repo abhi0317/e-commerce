@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="">password</label>
+    <input type="password" id="pass">
+    <span id="span"></span>
+    <br>
+    <br><br>
+    <br>
+    <br>
+
+    <form action="" method="post" name="f1">
+        <label for="">name</label>
+        <input type="text" name="name"><br>
+        <label for="">email</label>
+        <input type="text" name="email"><br>
+        <label for="">password</label>
+        <input type="password" name="password"><br>
+        <label>Gender</label>
+        <input type="radio" name="gender" value="male"><sapn>Male</sapn>
+        <input type="radio" name="gender" value="Female"><sapn>Female</sapn><br>
+        <label for="">languages</label>
+        All<input type="checkbox" onclick="checkbox()" id="all" name="chek" ><br>
+        english<input type="checkbox" id="eng" name="eng" value="english"><br>
+        malayalam<input type="checkbox" id="mal" name="mal"><br>
+        hindi<input type="checkbox" id="hi" name="hi"><br>
+        tamil<input type="checkbox" id="tamil" name="tamil"><br>
+        arabic<input type="checkbox" id="ara" name="ara"><br>
+        <button name="button" type="button" onclick="return validate()" >sign in</button>
+    </form>
+    <table id="t1">
+        <th>name</th>
+        <th>email</th>
+        <th>password</th>
+        <th>gender</th>
+        <th>languages</th>
+       
+
+    </table>
+    <script>
+        function validate(){
+            name1=document.f1.name.value
+            email1=document.f1.email.value
+            pass=document.f1.password.value
+            gen=document.f1.gender.value
+            
+            if(name1==""){
+                alert("plese enterr your name")
+            return false
+            }
+            else{
+                patt=/^[A-z\s\.]+$/
+                result=patt.test(name1)
+                if(result==false){
+                    alert("Only allow charectors,dot & space")
+                    return false
+                }
+            }
+            if(email1==""){
+                alert("plese ente your email")
+                return false
+            }
+            else{
+                patt=/^[A-z \. \@ 0-9]+$/
+                result=patt.test(email1)
+                if(result==false){
+                    alert("Only allow charectors,dot & space & special characters")
+                    return false
+                }
+            }
+            if(pass==""){
+                alert("enter your password")
+                return false
+            }
+            else if(pass.length<8){
+                alert("week password")
+                return false
+            }
+            // else if(pass.length>8){
+            //     alert("strong password")
+            // }
+              else{
+                patt=/^[A-z\@0-9]+$/
+                result=patt.test(pass)
+                if(result==false){
+                    alert("only allow charscters & special characters,dot")
+                    return false
+                }
+              }
+              if(gen==""){
+                alert("any gender")
+                return false
+              }
+              if(document.getElementById("eng").checked==true){
+                lang=document.getElementById("eng").value
+              }
+              else if(document.getElementById("mal").checked==true){
+                lang=document.getElementById("mal").value
+              }
+              else if(document.getElementById("hi").checked==true){
+                lang=document.getElementById("hi").value
+              }
+              else if(document.getElementById("tamil").checked==true){
+                lang=document.getElementById("tamil").value
+              }
+              else if(document.getElementById("ara").checked==true){
+                lang=document.getElementById("ara").value
+              }
+              table=document.getElementById("t1")
+            row=table.insertRow()
+            cell1=row.insertCell(0)
+            cell2=row.insertCell(1)
+            cell3=row.insertCell(2)
+            cell4=row.insertCell(3)
+            cell5=row.insertCell(4)
+            cell6=row.insertCell(5)
+            cell1.innerHTML=name1
+            cell2.innerHTML=email1
+            cell3.innerHTML=pass
+            cell4.innerHTML=gen
+            cell5.innerHTML=lang
+            cell6.innerHTML="<button onclick='del()'>Delete</button>"
+            document.getElementById("td1").value= name1
+        }
+        function checkbox(){
+            if(document.getElementById("all").checked==true){
+                document.getElementById("eng").checked=true
+                document.getElementById("mal").checked=true
+                document.getElementById("hi").checked=true
+                document.getElementById("tamil").checked=true
+                document.getElementById("ara").checked=true
+            }
+            else if(document.getElementById("all").checked==false){
+                document.getElementById("eng").checked=false
+                document.getElementById("mal").checked=false
+                document.getElementById("hi").checked=false
+                document.getElementById("tamil").checked=false
+                document.getElementById("ara").checked=false
+            }
+        }
+
+
+  
+          
+            
+        
+        function del(){
+            table=document.getElementById("t1")
+           table.deleteRow(2)
+        }
+    </script>
+    <script src="jquery.min.js"></script>
+    <script src="jq.js"></script>
+</body>
+
+</html>

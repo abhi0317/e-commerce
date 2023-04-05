@@ -1,0 +1,171 @@
+.li1{
+    font-size: 16px;
+}
+.fa {
+    padding: 5px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    background-color: aqua;
+  }
+  .button{
+    background-color: #FF6633;
+    border-color: #FF6633;
+    height: 39px;
+    width: 71px;
+    border-radius: 5px;
+  }
+  .li2{
+    font-weight: bolder;
+    font-size: small;
+    margin-top: 16px;
+  }
+  .b1{
+    margin-top: 6px;
+  }
+  .slider{
+    background-color: chartreuse;
+    height: 503px;
+  }
+  .h22{
+    margin-top: 20px;
+  }
+  .marquee{
+    color: #993300;
+    font-weight: bold;
+  }
+  .sec{
+    border: ridge 1px;
+   
+  }
+  #fot{
+    background-color: #121214;
+  }
+  #row{
+    color: #FFFF;
+  }
+  .link{
+    color: #FFFF;
+    margin-left: 160px;
+  }
+  .rrr{
+    background-color: #0C0C0C;
+    
+  }
+  .rr1{
+    margin-left: 100px;
+  }
+  .arrow{
+    color: #FF9B5A;
+  }
+  .ab1{
+    background-color: #27609F;
+    padding-top: 17px;
+  }
+  .row1{
+    height: 65px;
+    background-color: #27609F;
+    
+  }
+  .col1{
+    text-decoration: none;
+    color: #FFFF;
+  
+  }
+  .col2{
+    margin-top: 21px;
+    padding-top: 46px;
+  }
+  .cc3{
+    padding-top: 35px;
+  }
+  .img1{
+
+  }
+  .col3{
+    margin-top: 38px;
+  }
+  #col4{
+    margin-left: 307px;
+    margin-top: -13px;
+    font-weight: bold;
+  }
+  .rr2{
+   
+    width: 100%;
+    
+    padding-top: 15px;
+  }
+  #row1{
+    background-color: #FFFF;
+  }
+  .r2{
+    background-color: #27609F;
+    height: 65px;
+    margin-top: 6px;
+  }
+  .home{
+    display: flex;
+    color: #FFFF;
+  }
+  .r9{
+    background-color: #FFFF;
+  }
+  .c6{
+    height: 46px;
+    width: 100%;
+    border-radius: 4px;
+    margin-top: 7px;
+  }
+  #texta{
+    width: 100%;
+  }
+  .label{
+    margin-top: 11px;
+  }
+  .style{
+    margin-bottom: -10px;
+  }
+  .ind2{
+    margin-top: 13px;
+
+  }
+  #imgg1{
+    margin-top: 58px;
+    height: 100px;
+    width: 100%;
+  }
+  #imgg2{
+    margin-top: 33px;
+    height: 157px;
+    width: 100%;
+  
+  }
+  #imgg3{
+    
+    margin-top: 33px;
+    height: 157px;
+    width: 100%;
+
+  }
+  #imgg4{
+    margin-top: 33px;
+    height: 157px;
+    width: 100%;
+
+  }
+  #imgg5{
+    margin-top: 33px;
+    height: 157px;
+    width: 100%;
+
+  }
+  #c6{
+    height: 46px;
+    width: 717px;
+    border-radius: 4px;
+    margin-top: 7px;
+  }
+  
+  

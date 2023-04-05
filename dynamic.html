@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table id="t1">
+        <th>Name</th>
+        <th>email</th>
+        <tr>
+            <td><input type='text'></td>
+            <td><input type='text'></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><button onclick="addrow()">Add</button></td>
+        </tr>
+    </table>
+    <script>
+        function addrow(){
+            table=document.getElementById("t1")
+            row=table.insertRow()
+            cell1=row.insertCell(0)
+            cell2=row.insertCell(1)
+            cell3=row.insertcell(2)
+            cell4=row.insertcell(3)
+            cell5=row.insertcell(4)
+            cell6=row.insertCell(5)
+            cell1.innerHTML="<input type='text'>"
+            cell2.innerHTML="<input type='text'>"
+            cell3.innerHTML="<input type='text'>"
+            cell4.innerHTML="<input type='text'>"
+            cell5.innerHTML="<input type='text'>"
+            cell6.innerHTML="<button onclick='del()'>Delete</button>"
+        }
+        function del(){
+            table=document.getElementById("t1")
+           table.deleteRow(2)
+        }
+    </script>
+</body>
+</html>
